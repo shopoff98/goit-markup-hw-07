@@ -61,7 +61,7 @@
 
   margin-bottom: 28px;
 
-  @extend %tranform;
+  @extend %transform;
 }
 
 .form__label:focus-within > .form__icons,
@@ -85,7 +85,7 @@
 
   margin-bottom: 20px;
 
-  @extend %tranform;
+  @extend %transform;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.2);
@@ -95,7 +95,7 @@
 }
 
 .form__checkox-label {
-  @extend &flex;
+  @extend %flex;
 }
 
 .form__checkbox {
