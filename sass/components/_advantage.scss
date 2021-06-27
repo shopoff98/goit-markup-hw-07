@@ -1,0 +1,29 @@
+.advantage-section {
+  background-color: $white-color;
+  padding-top: 94px;
+}
+
+.advantage {
+  display: flex;
+}
+
+.advantage__list:not(:last-child) {
+  margin-right: $main-margin;
+}
+
+.advantage__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage__icons {
+  @extend %flex-just;
+  width: 270px;
+  height: 120px;
+  margin-bottom: $main-margin;
+  background-color: #f5f4fa;
+}

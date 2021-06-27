@@ -1,0 +1,104 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  background-color: $white-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-nav {
+  @extend %flex;
+}
+
+.navigation {
+  @extend %flex;
+
+  &__site-nav {
+    display: flex;
+  }
+}
+
+.navigation__item:not(:last-child),
+.site-link__item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-link {
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  padding: 32px 0;
+
+  color: var(--title-text-color);
+  text-decoration: none;
+
+  @extend %transition;
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: $accent-color;
+}
+
+.navigation__link--current {
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.site-link__info {
+  @extend %flex;
+  padding: 32px 0;
+
+  color: $description-color;
+  text-decoration: none;
+
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.logo--blue {
+  color: $accent-color;
+}
+
+.navigation__logo {
+  color: #000000;
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-right: 93px;
+}
+
+.site-link__icons {
+  border: none;
+  fill: currentColor;
+  margin-right: 10px;
+}

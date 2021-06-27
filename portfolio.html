@@ -8,168 +8,182 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container main-nav">
-            <nav>
-                <div class="main-nav">
-                    <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
-                    <ul class="site-nav">
-                        <li class="item"><a href="index.html" class="site-nav-list">Студия</a></li>
-                        <li class="item"><a href="portfolio.html" class="site-nav-list current">Портфолио</a></li>
-                        <li class="item"><a href="" class="site-nav-list">Контакты</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="site-link">
-                <li class="item">
-                    <a href="info@devstudio.com" class="link">
-                        <svg class="header-icons" width=16px height=12px>
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="item"><a href="tel:+380961111111" class="link">
-                        <svg class="header-icons" width=10px height=16px>
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+        <div class="container">
+            <div class="main-nav">
+                <nav>
+                    <div class="navigation">
+                        <a href="" class="navigation__logo"><span class="logo--blue">Web</span>Studio</a>
+                        <ul class="navigation__site-nav">
+                            <li class="navigation__item"><a href="index.html"
+                                    class="navigation__link">Студия</a></li>
+                            <li class="navigation__item"><a href="portfolio.html" class="navigation__link navigation__link--current">Портфолио</a>
+                            </li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="site-link">
+                    <li class="site-link__item">
+                        <a href="info@devstudio.com" class="site-link__info">
+                            <svg class="site-link__icons" width=16px height=12px>
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="site-link__item"><a href="tel:+380961111111" class="site-link__info">
+                            <svg class="site-link__icons" width=10px height=16px>
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
+<main>
     <section class="product-section">
-        <!-- Скрытый заголовок -->
         <div class="container">
+            <!-- Скрытый заголовок -->
         <h1 class="visually-hidden">Продукт</h1>
-        <ul class="product-list">
-            <li class="item"><button type="button" class="product-button">Все</button></li>
-            <li class="item"><button type="button" class="product-button">Веб-сайты</button></li>
-            <li class="item"><button type="button" class="product-button">Приложения</button></li>
-            <li class="item"><button type="button" class="product-button">Дизайн</button></li>
-            <li class="item"><button type="button" class="product-button">Маркетинг</button></li>
+        <ul class="product-type">
+            <li class="product-type__item"><button type="button" class="product-type__button">Все</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Веб-сайты</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Приложения</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Дизайн</button></li>
+            <li class="product-type__item"><button type="button" class="product-type__button">Маркетинг</button></li>
         </ul>
         <ul class="products">
-            <li class="product-item">
-                <div class="portfolio-overlay">
+            <li class="products__item">
+                <div class="products__overlay">
                 <img src="images/nout.jpg" alt="Веб-сайт" width="370">
-                <div class="portfolio-text">
-                    <p class="p-text">
+                <div class="products__textdiv">
+                    <p class="products__text">
                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
                 </div>
-                <div class="title-description">
-                <h2 class="product-title">Технокряк</h2>
-                <p class="product-description">Веб-сайт</p>
+                <div class="products__title-description">
+                <h2 class="products__title">Технокряк</h2>
+                <p class="products__description">Веб-сайт</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/basket.jpg" alt="Баскетбольный постер" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Постер New Orlean vs Golden Star</h2>
-                <p class="product-description">Дизайн</p>
+            <li class="products__item"><img src="images/basket.jpg" alt="Баскетбольный постер" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Постер New Orlean vs Golden Star</h2>
+                <p class="products__description">Дизайн</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/seafood.jpg" alt="Логотип ресторана" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Ресторан Seafood</h2>
-                <p class="product-description">Приложение</p>
+            <li class="products__item"><img src="images/seafood.jpg" alt="Логотип ресторана" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Ресторан Seafood</h2>
+                <p class="products__description">Приложение</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/axe.jpg" alt="Наушники" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Проект Prime</h2>
-                <p class="product-description">Маркетинг</p>
+            <li class="products__item"><img src="images/axe.jpg" alt="Наушники" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Проект Prime</h2>
+                <p class="products__description">Маркетинг</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/box.jpg" alt="Коробки" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Проект Boxes</h2>
-                <p class="product-description">Приложение</p>
+            <li class="products__item"><img src="images/box.jpg" alt="Коробки" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Проект Boxes</h2>
+                <p class="products__description">Приложение</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/mon.jpg" alt="Экран компьютера" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Inspiration has no Borders</h2>
-                <p class="product-description">Веб-сайт</p>
+            <li class="products__item"><img src="images/mon.jpg" alt="Экран компьютера" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Inspiration has no Borders</h2>
+                <p class="products__description">Веб-сайт</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/mag.jpg" alt="Журнал" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Издание Limited Edition</h2>
-                <p class="product-description">Дизайн</p>
+            <li class="products__item"><img src="images/mag.jpg" alt="Журнал" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Издание Limited Edition</h2>
+                <p class="products__description">Дизайн</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/bir.jpg" alt="Бирка" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Проект LAB</h2>
-                <p class="product-description">Маркетинг</p>
+            <li class="products__item"><img src="images/bir.jpg" alt="Бирка" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Проект LAB</h2>
+                <p class="products__description">Маркетинг</p>
                 </div>
             </li>
-            <li class="product-item"><img src="images/work.jpg" alt="Ноутбук" width="370">
-                <div class="title-description">
-                <h2 class="product-title">Growing Business</h2>
-                <p class="product-description">Приложение</p>
+            <li class="products__item"><img src="images/work.jpg" alt="Ноутбук" width="370">
+                <div class="products__title-description">
+                <h2 class="products__title">Growing Business</h2>
+                <p class="products__description">Приложение</p>
                 </div>
 
         </ul>
         </div>
 
     </section>
-
+</main>
 
 <!-- Footer  -->
 <footer class="footer">
     <div class="footer-container">
         <div class="address-div">
-            <a href="" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+            <a href="" class="logo-footer"><span class="logo--blue">Web</span>Studio</a>
             <address class="address">
-                <span class="address-company">г. Киев, пр-т Леси Украинки, 26</span>
-                <a href="info@example.com" class="address-link">info@example.com</a>
-                <a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a>
+                <span class="address__company">г. Киев, пр-т Леси Украинки, 26</span>
+                <a href="info@example.com" class="address__link">info@example.com</a>
+                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
             </address>
         </div>
         <div class="address-social">
-            <p class="social-tittle">Присоединяйтесь</p>
-            <ul class="social-icons">
-                <li class="list-social">
-                    <a href="" class="footer-link">
-                        <svg class="footer-svg">
+            <p class="address-social__tittle">Присоединяйтесь</p>
+            <ul class="address-social__list">
+                <li class="address-social__item">
+                    <a href="" class="address-social__link">
+                        <svg class="address-social__icons">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="list-social">
-                    <a href="" class="footer-link">
-                        <svg class="footer-svg">
+                <li class="address-social__item">
+                    <a href="" class="address-social__link">
+                        <svg class="address-social__icons">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="list-social">
-                    <a href="" class="footer-link">
-                        <svg class="footer-svg">
+                <li class="address-social__item">
+                    <a href="" class="address-social__link">
+                        <svg class="address-social__icons">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="list-social">
-                    <a href="" class="footer-link">
-                        <svg class="footer-svg">
+                <li class="address-social__item">
+                    <a href="" class="address-social__link">
+                        <svg class="address-social__icons">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
         </div>
+
+        <form class="email-form">
+            <p class="email-form__tittle">Подпишитесь на рассылку</p>
+            <label class="email__label">
+                <input type="email" name="email" class="email-form__link" placeholder="E-mail">
+                <button class="email-form__button" type="submit">Подписаться
+                    <svg class="email-form__icon" width=24px height=24px>
+                        <use href="./images/icons.svg#icon-icon-send-1"></use>
+                    </svg>
+                </button>
+            </label>
+        </form>
     </div>
 
 </footer>
